@@ -1,0 +1,30 @@
+body{
+    background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/54641hd.jpg");
+}
+
+button{
+width:200px;
+height:200px;
+}
+
+.hero{
+    background-color:rgba(0, 0, 0, 0.7);
+    min-height:200px;
+    text-align:center;
+    flex-direction: column;
+    display:flex;
+}
+.intro{
+    flex:2;
+    color: rgb(77, 7, 77);
+    font-size:72px;
+    text-shadow: 2px 2px rgb(156, 10, 10);
+    font-weight: bolder;
+    align-items:center;
+}
+.inspiration{
+    flex:1;
+    color: white;
+    font-size:24px;
+    text-shadow: 1px 1px darkslategrey;
+}
