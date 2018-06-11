@@ -32,14 +32,18 @@ let stoneArray = [];
 //generate images of the buttons (AN: still needs work with the exclusion issue and repeats)
 function gRandom() {
     for (let g = 0; g < 4; g++) {
-        let month = Math.floor(Math.random() * birthstones.length);
-        for (let i = 0; i < 7; i++) {
+        let month = 0;
+        console.log("g value= " +g);
+        randomMonth();
+        function randomMonth() {
+            month = Math.floor(Math.random() * birthstones.length);
             console.log(month);
-            if (!stoneArray.includes(month)) {
-                stoneArray.push(month);
+            if (stoneArray.includes(month)) {
+                randomMonth();
+            } else {
                 console.log(month);
+                stoneArray.push(month);
             }
-
         }
         // stoneArray.filter(function (month) {
         //     if (stoneArray.indexOf(month)) {
@@ -48,7 +52,7 @@ function gRandom() {
         //     }
         // })
     }
-    console.log(birthstones[stoneArray[0]]);
+    console.log("Stone Array: " + stoneArray);
     //setting gem images to buttons
     $('#gem1').css("background-image", "url(" + birthstones[stoneArray[0]] + ")");
     $("#gem2").css("background-image", "url(" + birthstones[stoneArray[1]] + ")");
@@ -87,20 +91,34 @@ function jRandom() {
     goal = Math.floor(Math.random() * 120 + 19);
     //create the random values for the gems
     for (let i = 0; i < 4; i++) {
-        randomNum();
-        if (gemArray.includes(value)) {
-            let value = Math.floor(Math.random() * 12 + 1);
-        } else {
-            gemArray.push(value);
-            // console.log(value);
-            console.log(gemArray);
-            console.log("yep")
+        let value = 0;
+        console.log(i);
+        randomValue();
+        function randomValue() {
+            value = Math.floor(Math.random() * birthstones.length);
+            console.log(value);
+            if (gemArray.includes(value)) {
+                randomValue();
+            } else {
+                console.log(value);
+                gemArray.push(value);
+                
+            }
+            // randomNum();
+            // if (gemArray.includes(value)) {
+            //     let value = Math.floor(Math.random() * 12 + 1);
+            // } else {
+            //     gemArray.push(value);
+            //     // console.log(value);
+            //     console.log(gemArray);
+            //     console.log("yep")
+            // }
         }
     }
 
     //setting the gem values from array
     gem1 = gemArray[0];
-    console.log(gemArray[0]);
+    console.log("Gem Values: " + gemArray);
     gem2 = gemArray[1];
     gem3 = gemArray[2];
     gem4 = gemArray[3];
@@ -138,8 +156,8 @@ function runGame() {
 }
 
 //Reset Game
-function reset(){
-    guess=0;
+function reset() {
+    guess = 0;
     $('#guess').html(guess);
     jRandom();
     gRandom();
