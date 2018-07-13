@@ -1,6 +1,8 @@
 /* Object Bodies */
 body{
     background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/54641hd.jpg");
+    z-index:0;
+    position:relative;
 }
 p{
     margin:auto;
@@ -11,6 +13,7 @@ button{
     background-size: contain;
     background-color:transparent;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 /* Classes */
