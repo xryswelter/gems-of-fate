@@ -1,6 +1,6 @@
 # Gems of Fate
 
-##Table of Content
+## Table of Content
 - Purpose of webpage
 - How to use app/Guide
 - Contributors
