@@ -11,7 +11,7 @@ This is a project created to demonstrate my ability to use jQuery in additional 
 
 ### How To Use App/Guide
 
-To get started, please click the link: [Click Me](https://xryswelter.github.io/unit-4-game/)
+To get started, please click the link: [Click Me](https://xryswelter.github.io/gems-of-fate/)
 The game starts once you click on a gem.
 - Each gem has a random value assigned to it.  
 - Your goal value is randomized with each game.
