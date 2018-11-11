@@ -148,37 +148,3 @@ function reset() {
   jRandom();
   gRandom();
 }
-//EXCESSIVE FIRST ATTEMPTS (JUST FOR LOG/REF)
-
-//Test to see if any gem values [first attempt at coding this]
-// function check() {
-//     if (gem1 === gem2 || gem1 === gem3 || gem1 === gem4) {
-//         randomNumberGenerator();
-//     } else
-//         if (gem2 === gem3 || gem2 === gem4) {
-//             randomNumberGenerator();
-//         } else
-//             if (gem3 === gem4) {
-//                 randomNumberGenerator();
-//             } else {
-//                 start = true;
-//             }
-// }
-// //Joey equation for filtering out array value
-// let arr = ['cat','dog','fish'];
-// let values=[];
-// arr.filter(function(item)){
-//     if(!values.includes(item)){
-//         values.push(item);
-//         return true;
-//     }
-// }
-//Update Guess display
-// // function updateGuessValue() {
-//     for (let i = 0; i < guess.length; i++) {
-//         let total = 0;
-//         guess = total += i;
-//         console.log(guess)
-//         $('#guess').html(guess)
-//     }
-// }
